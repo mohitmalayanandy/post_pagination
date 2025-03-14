@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import Post from "./components/Post";
 import Pagination from "./components/Pagination";
 import Search from "./components/Search";
-import Modal from "./components/ModalPost";
+
+
 
 const API_URL = "https://jsonplaceholder.typicode.com/posts";
 
@@ -39,7 +40,6 @@ const App = () => {
     <div className="min-h-screen p-8 text-black">
       <h1 className="text-4xl font-extrabold text-center mb-8">Posts</h1>
       <Search onSearch={handleSearch} />
-      <Modal />
       <Post postsData={currentPosts} />
       <Pagination
         totalPosts={filteredPosts.length}
