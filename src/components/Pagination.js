@@ -34,8 +34,12 @@ const Pagination = ({
             >
                 Previous
             </button>
-            <button className="mx-1 px-3 py-1 rounded bg-gray-200">
+            <button className="mx-1 px-3 py-1 font-bold rounded bg-blue-200">
                 {currentPage}
+            </button>
+
+            <button className="mx-1 px-3 py-1 rounded bg-gray-200">
+                {currentPage+1}
             </button>
             <button
                 onClick={handleNext}
