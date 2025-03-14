@@ -11,7 +11,6 @@ const Post = ({ postsData }) => {
                         key={index}
                         title={post.title}
                         body={post.body}
-                        onClick={openModal()}
                     />
                 ))}
             </div>
